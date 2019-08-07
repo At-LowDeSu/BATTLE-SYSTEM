@@ -286,5 +286,5 @@ function mainLoop() {
   let activeEnemy = new Enemy(0);
   gameStart();
   text_2.innerHTML =
-    'Your speed is higher. You go first. Select and attack option. ';
+    'Your speed is higher. You go first. Select an attack option. ';
 }
