@@ -128,8 +128,8 @@ function mainLoop() {
   class Enemy {
     constructor(type_class) {
       this.type_class = type_class;
-      this.health = 150;
-      this.mana = 20;
+      this.health = 130;
+      this.mana = 15;
       this.speed = 5;
       this.rand = 0;
     }
@@ -176,7 +176,7 @@ function mainLoop() {
         text_3.innerHTML =
           'Using 5 mana points, the enemy expels energy from his body. The mana begins to permeate around his body.<br>His body begins to recover from its injuries!';
         this.mana = this.mana - 5;
-        this.gainHealth(30);
+        this.gainHealth(20);
       } else {
         text_3.innerHTML =
           "The enemy attempts to expel energy from his body, but since his mana was too low, he's taken a form of mana burn!";
@@ -184,7 +184,7 @@ function mainLoop() {
       }
     }
     wait() {
-      this.chargeMana(10);
+      this.chargeMana(7);
     }
     enemyChoice() {
       function getRandomInt(max) {
